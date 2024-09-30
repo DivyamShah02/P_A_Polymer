@@ -1,0 +1,62 @@
+
+.primary-image-pa{
+    padding: 0 0 50px 100px;
+}
+
+@media (max-width: 992px) {
+    .small-img-pa {
+        display: none;
+    }
+
+    .primary-image-pa {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+hr{
+    color: #00D084;
+    padding: 2px 0;
+}
+
+/* Styling for the title */
+h1.PA-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .PA-content-section {
+    margin-top: 50px;
+  }
+  .PA-product-image {
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the div without distortion */
+    border: solid 5px #00D084;
+    border-radius: 10px;
+  }
+  .PA-section-heading {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  /* Additional padding for the sections */
+  .PA-section-content {
+    margin-bottom: 20px;
+  }
+  /* Styling for lists */
+  ul.PA-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  ul.PA-list li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    margin-bottom: 5px;
+  }
+  ul.PA-list li::before {
+    content: "• ";
+    color: #761fe3; /* Dynamic Labz brand color */
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .PA-container {
+    max-width: 1200px;
+  }
