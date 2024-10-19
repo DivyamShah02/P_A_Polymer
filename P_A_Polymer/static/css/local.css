@@ -14,7 +14,7 @@
 }
 
 hr{
-    color: #0800fc;
+    color: #4169E1;
     padding: 2px 0;
 }
 
@@ -29,7 +29,7 @@ h1.PA-title {
   .PA-product-image {
     width: 100%;
     object-fit: cover; /* Ensures the image covers the div without distortion */
-    border: solid 5px #0800fc;
+    border: solid 5px #4169E1;
     border-radius: 10px;
   }
   .PA-section-heading {
