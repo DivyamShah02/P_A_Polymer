@@ -60,3 +60,33 @@ h1.PA-title {
   .PA-container {
     max-width: 1200px;
   }
+
+/* Change the color of the carousel indicators */
+.carousel-indicators button {
+  background-color: #4169E1; /* Royal Blue color */
+  border: none; /* Remove border */
+}
+
+.carousel-indicators .active {
+  background-color: #1E90FF; /* Slightly lighter blue for active state */
+}
+
+.img-carousel-nav-btn {
+  /* color: #4169E1; */
+  color: #000;
+  background-color: rgba(104, 104, 104, 0.558);
+  padding: 25px 18px;
+  border-radius: 50px;
+}
+
+.carousel {
+  border: 5px solid var(--bs-primary);
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  min-height: 400px;
+  min-width: 400px;
+  /* max-height: 400px; */
+  /* max-width: 400px; */
+}
