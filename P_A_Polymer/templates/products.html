@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>P A Polymer</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="/static/lib/animate/animate.min.css"/>
+        <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="/static/css/style.css" rel="stylesheet">
+        <link href="/static/css/local.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Ambavadi, Ahmedabad</a>
+                        <a href="tel:+01234567890" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+91 000 000 0000</a>
+                        <a href="mailto:example@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-user text-primary me-2"></i>Register</small></a>
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-sign-in-alt text-primary me-2"></i>Login</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fa fa-home text-primary me-2"></i> My Dashboard</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> My Profile</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><i class="fas fa-draw-polygon me-3"></i>P A Polymer</h1>
+                    <!-- <img src="/static/img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#products" class="nav-item nav-link">Products</a>
+                        <a href="#whyus" class="nav-item nav-link">Why Us</a>
+                        <!-- <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Pages</span>
+                            </a>
+                            <div class="dropdown-menu m-0">
+                                <a href="feature.html" class="dropdown-item">Our Features</a>
+                                <a href="team.html" class="dropdown-item">Our team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="offer.html" class="dropdown-item">Our offer</a>
+                                <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div> -->
+                        <a href="#contact" class="nav-item nav-link">Products</a>
+                    </div>
+                    <a href="#contact" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Quote</a>
+                </div>
+            </nav>
+            
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Products</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                        <li class="breadcrumb-item active text-primary">Products</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Product Start -->
+        <div class="container-fluid about py-5" id="products">
+            <div class="container PA-content-section" style="max-width: 1200px;">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Products</h4>
+                    <h1 class="display-5 mb-4">We provide wide range of products</h1>
+                    <hr>
+                    </p>
+                </div>
+                <div class="row mb-5">
+                    <div class="row col-md-8 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="col-md-12">
+                            <h1 class="PA-title text-primary">Polybutylene Terephthalate (PBT)</h1>
+                                <h2 class="PA-section-heading">Introductions & Properties:</h2>
+                                <div class="PA-section-content">
+                                    <ul class="PA-list">
+                                        <li>PBT thermoplastic polyester resins are high performance plastic molding resins which are based on polybutylene terephthalate (PBT) polymers. By adding reinforcing agents and tougheners, the inherent low creep, dimensional stability and good electrical properties of PBT can be augmented to provide a family of molding resins with exceptional strength, stiffness and toughness. Alloying with other polymers and selecting the proper reinforcement technology can improve dimensional stability and surface appearance. PBT is offering superior performance in Flow, Flatness & Toughness.</li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h2 class="PA-section-heading">Industry Wise Applications:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li><strong>Exterior Body Panels & Glazing</strong></li>
+                                    <li><strong>Back Lites</strong>, Door Panels, Fenders, Fixed Glazing, Panoramic Roofs, Roof
+                                        Modules & Tailgates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="https://www.jrdpolymer.com/images/pbt.png" alt="PBT Product Image"
+                            class="PA-product-image img-fluid w-100 wow fadeInRight" data-wow-delay="0.2s">
+                    </div>
+                    <div class="row wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Lighting:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Fog Lamp Housings, Fog Lamp Reflectors, Headlamp Bezels...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Power Train:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Air Intake, Automotive Gears, Automotive Wire Coating, Brackets...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Structures & Interiors:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Composite Headliners, FMVSS Energy Absorption Systems...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Exterior Components, Trims & Accessories:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Appliques, Cowl Vent Grilles, Door Handles, Front Grilles...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                
+                <div class="row pt-5 mb-5">
+                    <div class="col-md-4 text-center">
+                        <img src="https://www.jrdpolymer.com/images/nylon.png" alt="PBT Product Image"
+                            class="PA-product-image img-fluid w-100 wow fadeInLeft" data-wow-delay="0.2s">
+                    </div>
+                    <div class="row col-md-8 wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="col-md-12">
+                            <h1 class="PA-title text-primary">Polymide 6, 6.6 (Nylon 6, 6.6)</h1>
+                            <h2 class="PA-section-heading">Introductions & Properties:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Polyamide is a polymer containing monomers of amides joined by peptide bonds. They can occur both naturally and artificially, examples being proteins, such as wool and silk, and can be made artificially through step-growth polymerization, examples being nylons, aramids, and sodium poly (aspartate).</li>
+                                    <li>Due to their outstanding properties these material have become indispensable in almost all fields of engineering for the most varied components and machine parts, as high-quality electrical insulating materials and for many other special applications. Nylon is exceptional for its high mechanical strength, rigidity and thermal stability. Moreover, Nylon affords good impact resistance even at low temperatures, advantages sliding friction properties and problem-free processing. It is mainly used in Automobile, Engineering, Electrical, Electronics & Textiles industries.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Injection Molding:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>A L/D ratio of 18 - 22 is recommended.</li>
+                                    <li>Melt temperature : 240 - 270°C.</li>
+                                    <li>Min temperature : 55 - 80°C.</li>                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Extrusion:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Only highly viscous grades can be processed by extrusion.</li>
+                                    <li>A three- sections screw with a L/D ratio of 20 - 30 is recommended.</li>
+                                    <li>The processing temperature should lie between 240 and 270°C.</li>                
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Engineering Industry:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Better functional properties at low cost, metal components are being replaced by Polyamide 6. Applications: Gears / Bushes / Cams, Impeller Fans, Ropeway Pulley, Coupling Components, Roller, Castors, Nylock Nut/Washers, Idler Seals, Water Meter Housing, Insulator Liners.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Textile Industry:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Higher abrasion resistance, silent running, high impact resistance and the need for anti-static surface, make Polyamide 6 a unique choice over the materials. Applications: Drafting spacer, Picker Bush Bobbins, Drive Pulley, Ring Tubes/Bobbins, Gears/Bushes, Magnetic Holder, Shuttles/Pirns, Steamable ring tubes, Tensions Craddle, Yarn Separators.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Automobile Industry:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Exterior, under bonnet and near the engine applications. Easily paintable with low-cost bake paints and can be given a finish similar to metal components. Applications: Radiator Fan, Radiator Grill, Head/Tail Lamp Housing, Speedometer Gears, Door Handles, Fuel oil filter housing.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="PA-section-heading">Electrical/ Electronic Industry:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Polyamide 6 resins, due to a combination of excellent electrical properties viz., insulation/tracking resistance, di-electric strength toughness and flame retardant characteristics are fast replacing conventional materials. Applications: Circuit Breaker, Battery Casing, Switch / Switch Parts, Terminal / Connectors, Carbon Brush Holder.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <hr>
+
+                <div class="row pt-5 mb-5">
+                    <div class="row col-md-8 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="col-md-12">
+                            <h1 class="PA-title text-primary">Poly Acetal (POM)</h1>
+                            <h2 class="PA-section-heading">Introductions & Properties:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Polyoxymethylene (POM), also known as acetal, polyacetal, and polyformaldehyde, is an engineering thermoplastic used in precision parts that require high stiffness, low friction and excellent dimensional stability. POM is a lightweight, low-friction, and wear-resistant thermoplastic with good physical and is often marketed and used as a metal substitute.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="https://www.jrdpolymer.com/images/pom.png" alt="PBT Product Image"
+                            class="PA-product-image img-fluid w-100 wow fadeInRight" data-wow-delay="0.2s">
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="row pt-5 mb-5">
+                    <div class="col-md-4 text-center">
+                        <img src="https://www.jrdpolymer.com/images/pmma.jpg" alt="PBT Product Image"
+                            class="PA-product-image img-fluid w-100 wow fadeInLeft" data-wow-delay="0.2s">
+                    </div>
+                    <div class="row col-md-8 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="col-md-12">
+                            <h1 class="PA-title text-primary">Poly Methyl Methacrylate (PMMA)</h1>
+                            <h2 class="PA-section-heading">Introductions & Properties:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Shatter-resistant or lighter alternative to glass, Poly Methyl Methacrylate also known as PMMA/Acrylic/Acrylic Glass/Acrylic Resin is a transparent thermoplastic. Chemically, it is the synthetic polymer of Methyl Methacrylate. Where extreme strength is not required, PMMA can be used as an economical alternative to Polycarbonate (PC).Where extreme strength is not required, PMMA can be used as an economical alternative to Polycarbonate (PC).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="row pt-5 mb-5">
+                    <div class="row col-md-8 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="col-md-12">
+                            <h1 class="PA-title text-primary">Polycarbonate(PC)</h1>
+                            <h2 class="PA-section-heading">Introductions & Properties:</h2>
+                            <div class="PA-section-content">
+                                <ul class="PA-list">
+                                    <li>Polycarbonate is a particular group of thermoplastic polymers. They are easily worked, molded, and thermoformed. Because of these properties, polycarbonates find many applications. This polymer is highly transparent to visible light and has better light transmission characteristics than many kinds of glass. Polycarbonate is a very durable material & although it has high impact-resistance, it has low scratch-resistance.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="https://www.jrdpolymer.com/images/pc.jpg" alt="PBT Product Image"
+                            class="PA-product-image img-fluid w-100 wow fadeInRight" data-wow-delay="0.2s">
+                    </div>
+
+                </div>
+                <hr>
+
+            </div>
+        </div>
+        <!-- Product End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="#home" class="p-0">
+                                <h4 class="text-white"><i class="fas fa-draw-polygon me-3"></i>P A Polymer</h4>
+                                <!-- <img src="/static/img/logo.png" alt="Logo"> -->
+                            </a>
+                            <p class="mb-4">P A Polymer is a leading polymer distributor committed to delivering high-quality polymer solutions to businesses across various industries.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="#about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="#products"><i class="fas fa-angle-right me-2"></i> Products</a>
+                            <a href="#whyus"><i class="fas fa-angle-right me-2"></i> Why Us</a>
+                            <a href="#contact"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Products</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Polybutylene Terephthalate (PBT)</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Polymide 6, 6.6 (Nylon 6, 6.6)</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Poly Acetal (POM)</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Poly Methyl Methacrylate (PMMA)</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Polycarbonate(PC)</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">Ahmedabad. Gujarat</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">+91 000 000 0000</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fab fa-firefox-browser text-primary me-3"></i>
+                                <p class="text-white mb-0">www.google.com</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>P A Polymer</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="https://www.dynamiclabz.net">Dynamic Labz</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/static/lib/wow/wow.min.js"></script>
+        <script src="/static/lib/easing/easing.min.js"></script>
+        <script src="/static/lib/waypoints/waypoints.min.js"></script>
+        <script src="/static/lib/counterup/counterup.min.js"></script>
+        <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
+        <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="/static/js/main.js"></script>
+
+        <script>
+            // Function to add/remove 'active' class based on scroll position
+            window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.container-fluid');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+
+            // Loop through sections and determine which section is in view
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Adjust offset as needed
+                if (window.scrollY >= sectionTop) {
+                currentSection = section.getAttribute('id');
+                }
+            });
+
+            // Remove 'active' class from all nav links and add it to the current one
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+                }
+            });
+            });
+
+        </script>
+    </body>
+
+</html>

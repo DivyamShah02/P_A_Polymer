@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ccc;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border: 2px solid #00bfa5;
+            border-radius: 50%;
+            top: 0;
+        }
+        .timeline-item h4 {
+            color: #00bfa5;
+        }
+        .timeline-item h5 {
+            margin-bottom: 0;
+        }
+        .timeline-item p {
+            margin-top: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">OUR JOURNEY</h2>
+    <div class="timeline mt-4">
+        
+        <div class="timeline-item">
+            <h4>2011</h4>
+            <h5>FOUNDED</h5>
+            <p>Business started with 3 Channel Partners, 4 Warehouses and a Team of 11 members</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2013</h4>
+            <h5>HEADSTART</h5>
+            <p>Crossed USD 16.50 Million in Sales. Channel Partners increased to 6</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2016</h4>
+            <h5>GROWTH</h5>
+            <p>Number of Channel Partners increased to 8 and Team grew to 40 members</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2017</h4>
+            <h5>SUCCESS</h5>
+            <p>Achieved USD 38.80 Million in Sales. Expansion of Warehousing Capacity</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2018</h4>
+            <h5>VALUE</h5>
+            <p>Apex became a part of Ravago Group</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
