@@ -83,10 +83,12 @@ h1.PA-title {
   border: 5px solid var(--bs-primary);
   border-radius: 10px;
 }
-
+.carousel-item{
+  height: 380px;
+}
 .carousel-item img {
-  min-height: 400px;
-  min-width: 400px;
-  /* max-height: 400px; */
-  /* max-width: 400px; */
+         /* Ensures the image does not exceed container width */
+  min-height: 100% ; /* Ensures the image does not exceed container height */
+  object-fit:cover ; 
+  
 }
